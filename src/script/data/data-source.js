@@ -1,6 +1,6 @@
 class DataSource {
     static searchClub(keyword) {
-        return fetch(`https://sports-api.dicoding.dev/teams/search?t=${keyword}`)
+        return fetch(`http://www.omdbapi.com/?apikey=fc5f2e5b&s=${keyword}`)
         .then(response => {
             return response.json();
         })
